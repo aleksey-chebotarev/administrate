@@ -43,7 +43,7 @@ jobs:
           PGHOST: localhost
           PGUSER: administrate
           RAILS_ENV: test
-      - image: postgres:9.5-alpine
+      - image: postgres:9.6-alpine
         environment:
           POSTGRES_USER: administrate
           POSTGRES_DB: administrate-prototype_test
@@ -57,7 +57,7 @@ jobs:
           PGHOST: localhost
           PGUSER: administrate
           RAILS_ENV: test
-      - image: postgres:9.5-alpine
+      - image: postgres:9.6-alpine
         environment:
           POSTGRES_USER: administrate
           POSTGRES_DB: administrate-prototype_test
