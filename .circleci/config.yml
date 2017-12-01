@@ -42,11 +42,12 @@ jobs:
         environment:
           PGHOST: localhost
           PGUSER: administrate
+          POSTGRES_DB: ruby24
           RAILS_ENV: test
       - image: postgres:9.6-alpine
         environment:
           POSTGRES_USER: administrate
-          POSTGRES_DB: administrate-prototype_test
+          POSTGRES_DB: ruby24
           POSTGRES_PASSWORD: ""
 
   ruby-2.3:
@@ -56,11 +57,12 @@ jobs:
         environment:
           PGHOST: localhost
           PGUSER: administrate
+          POSTGRES_DB: ruby23
           RAILS_ENV: test
       - image: postgres:9.6-alpine
         environment:
           POSTGRES_USER: administrate
-          POSTGRES_DB: administrate-prototype_test
+          POSTGRES_DB: ruby23
           POSTGRES_PASSWORD: ""
 
 workflows:
